@@ -20,7 +20,7 @@ if (isDevelopment) { // DEV SERVER
   });
 } else { // PRODUCTION SERVER
   app.set('port', (process.env.PORT || 5000));
-  app.use(express.static(path.join(__dirname, '/static')));
+  // app.use(express.static(path.join(__dirname, '/public')));
 
   app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
