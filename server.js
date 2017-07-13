@@ -26,8 +26,8 @@ if (isDevelopment) { // DEV SERVER
   app.set('view engine', 'ejs');
 
   app.get('/', function(request, response) {
-    // response.render('pages/index');
-    response.send('HELLO WORLD');
+    response.render('index');
+    // response.send('HELLO WORLD');
   });
 
   app.listen(app.get('port'), function() {
