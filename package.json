@@ -10,7 +10,8 @@
     "start": "node server.js",
     "build": "cross-env BABEL_ENV=production ./node_modules/.bin/webpack --config webpack.config.production.js",
     "lint": "eslint --cache --ignore-path .gitignore --format=node_modules/eslint-formatter-pretty . *.js",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "build-start": "npm run build && npm run start"
   },
   "author": "Sarah Edkins",
   "license": "MIT",
