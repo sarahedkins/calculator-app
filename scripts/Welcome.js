@@ -4,10 +4,7 @@ export default class Welcome extends Component {
 
   constructor(props) {
     super(props);
-
     const guestname = this.getGuestName();
-    console.log('guestname', guestname);
-
     this.state = {
       name: guestname || 'Guest',
       submittedName: guestname,
@@ -16,7 +13,6 @@ export default class Welcome extends Component {
 
   setGuestName = (val) => {
     localStorage.guestname = val;
-    console.log('LOCALSTORAGE.GUESTNAME', localStorage.guestname);
   };
 
   getGuestName = () => localStorage.guestname;

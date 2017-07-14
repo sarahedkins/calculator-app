@@ -13,7 +13,7 @@ module.exports = {
     publicPath: '/static/'
   },
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['', '.js', 'css']
   },
   devtool: 'eval-source-map',
   plugins: [
@@ -26,6 +26,11 @@ module.exports = {
         test: /\.jsx?$/,
         loaders: ['babel'],
         include: path.join(__dirname, 'scripts')
+      },
+      {
+        test: /\.css/,
+        loaders: ['style', 'css'],
+        include: path.join(__dirname, 'styles')
       }
     ]
   }

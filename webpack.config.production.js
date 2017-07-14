@@ -9,7 +9,7 @@ module.exports = {
     publicPath: '/'
   },
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['', '.js', 'css']
   },
   devtool: 'source-map',
   plugins: [
@@ -31,6 +31,10 @@ module.exports = {
         test: /\.jsx?$/,
         loaders: ['babel'],
         include: path.join(__dirname, 'scripts')
+      },
+      {
+        test: /\.css/,
+        loaders: ['style', 'css']
       }
     ]
   }

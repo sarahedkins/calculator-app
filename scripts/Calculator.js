@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import style from '../styles/calculator.css';
 
 export default class Calculator extends Component {
 
@@ -77,8 +78,8 @@ export default class Calculator extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Savings Calculator</h1>
+      <div className="border">
+        <h1 className="header">Savings Calculator</h1>
         Want: <input type="text" onChange={this.handleWantInput} value={this.state.want} />
         <br />
         Have: <input type="text" onChange={this.handleHaveInput} value={this.state.have} />

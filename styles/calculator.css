@@ -1,3 +1,12 @@
 .header {
-  color: red;
+  color: lightcoral;
+}
+
+.border {
+  border: solid 2px peachpuff;
+  background-color: mintcream;
+  padding: 25px;
+  padding-top: 0px;
+  max-width: 300px;
+  font-family: monospace, sans-serif;
 }
