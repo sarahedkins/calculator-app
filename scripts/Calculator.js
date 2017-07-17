@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import style from '../styles/calculator.css';
+import '../styles/calculator.css';
 
 export default class Calculator extends Component {
 
