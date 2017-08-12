@@ -19,7 +19,8 @@
     "babel-runtime": "^6.20.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "welcome-name-react": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
